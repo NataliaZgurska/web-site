@@ -226,7 +226,7 @@ body {
 /*============section2-team=============*/
 .team {
   background-color: #f4f4fd;
-  padding: 96px 28px;
+  padding: 96px 12px;
 }
 
 .team-title {
@@ -254,10 +254,7 @@ body {
 }
 
 .card-team {
-  padding-top: 32px;
-  padding-bottom: 32px;
-  width: 232px;
-  margin: 0 auto;
+  padding: 32px 16px;
 }
 
 .team-member-name {
@@ -714,16 +711,14 @@ body {
   }
   /*-768 TEAM-*/
   .team {
-    padding-left: 90px;
-    padding-right: 90px;
+    padding: 96px 92px;
   }
   .team-list {
     gap: 64px 24px;
   }
-  /*!!!!!!!! calc не працює!!!!!!!*/
   .team-item {
-    width: calc((100%-24px * 1) / 2);
-    background-color: #31d0aa;
+    width: calc((100% - 24px) / 2);
+    padding: 0;
   }
 }
 
@@ -764,14 +759,14 @@ body {
     font-weight: 400;
   }
 
-  /*- 1158 TEAM   */
+  /*- 1158 TEAM  !!!!!team-soc-link !!!!! */
   .team {
-    padding: 120px 140px;
+    padding: 120px 141px;
   }
   .team-list {
     gap: 24px;
   }
   .team-item {
-    width: calc((100%-24px * 3) / 4);
+    width: calc((100% - 24px * 3) / 4);
   }
 }
