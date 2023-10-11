@@ -25,11 +25,11 @@ body {
 }
 
 .container {
-  width: 100%;
-  max-width: 1158px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin: 0 auto;
+  max-width: 320px;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-left: auto;
+  margin-right: auto;
   border: 2px solid red;
 }
 
@@ -234,7 +234,7 @@ body {
 /*============section2-team=============*/
 .team {
   background-color: #f4f4fd;
-  padding: 120px 0;
+  padding: 96px 28px;
 }
 
 .team-title {
@@ -249,11 +249,13 @@ body {
 }
 .team-list {
   display: flex;
-  gap: 24px;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 72px;
 }
 .team-item {
   background-color: #ffffff;
-  width: calc((100%-24px * 3) / 4);
+  width: 264px;
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
     0px 1px 1px 0px rgba(46, 47, 66, 0.16),
@@ -263,6 +265,8 @@ body {
 .card-team {
   padding-top: 32px;
   padding-bottom: 32px;
+  width: 232px;
+  margin: 0 auto;
 }
 
 .team-member-name {
@@ -289,6 +293,7 @@ body {
   gap: 24px;
   justify-content: center;
 }
+
 .team-soc-item {
   width: 40px;
   height: 40px;
@@ -702,4 +707,41 @@ body {
   background-color: #404bbf;
   border: none;
   fill: #f4f4fd;
+}
+
+/*********** Media 768 **********/
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    border: 2px solid blue;
+  }
+  .team {
+    padding-left: 108px;
+    padding-right: 108px;
+  }
+  .team-list {
+    gap: 20px;
+  }
+  .team-item {
+    width: calc((100%-24px) / 2);
+    background-color: #31d0aa;
+  }
+}
+
+/*********** Media 1158 ************/
+@media screen and (min-width: 1158px) {
+  .container {
+    max-width: 1158px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .team {
+    padding: 120px 156px;
+  }
+  .team-list {
+    gap: 24px;
+  }
+  .team-item {
+    width: calc((100%-72px) / 4);
+  }
 }
