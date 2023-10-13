@@ -127,29 +127,50 @@ body {
   color: #404bbf;
 }
 
-/* ==========section1-welcome============*/
+/* ==========section1-Hero============*/
 .hero {
   background-color: #2e2f42;
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/people-office1.jpg);
+    url(../images/hero-bg-mobi.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   max-width: 1440px;
   margin: 0 auto;
   text-align: center;
-  padding: 188px 0;
+}
+
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero-bg-mobi@2x.jpg);
+  }
+}
+
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 72px 0;
 }
 .hero-title {
   color: #ffffff;
-  font-size: 56px;
+  font-size: 36px;
   font-weight: 700;
-  line-height: 1.07;
+  line-height: 1.11;
   letter-spacing: 0.02em;
-  max-width: 496px;
+  max-width: 288px;
+  padding-left: 36px;
+  padding-right: 36px;
+  margin-bottom: 72px;
 }
 .hero-btn {
   border: none;
@@ -164,7 +185,7 @@ body {
   height: 56px;
   display: block;
   padding: 16px 32px;
-  margin-top: 48px;
+  /*margin-top: 48px;*/
   border-radius: 4px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -172,11 +193,7 @@ body {
 .welcome-btn:focus {
   background-color: #404bbf;
 }
-.hero-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
+
 /*==============section1-features=============*/
 .feature {
   padding: 96px 0;
@@ -703,6 +720,37 @@ body {
   .container {
     max-width: 768px;
   }
+  /*  768 Hero   */
+  .hero {
+    background-color: #2e2f42;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero-bg-tablet.jpg);
+  }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/hero-bg-tablet@2x.jpg);
+    }
+  }
+  .hero-container {
+    padding: 112px 0;
+  }
+  .hero-title {
+    font-size: 56px;
+    line-height: 1.07;
+    max-width: 496px;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-bottom: 36px;
+  }
   /*   768 feature   */
   .feature-list {
     gap: 72px 24px;
@@ -741,6 +789,32 @@ body {
     max-width: 1158px;
     padding-left: 15px;
     padding-right: 15px;
+  }
+  /*  1158 Hero   */
+  .hero {
+    background-color: #2e2f42;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero-bg-dskt.jpg);
+  }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/hero-bg-dskt@2x.jpg);
+    }
+  }
+  .hero-container {
+    padding: 188px 0;
+  }
+  .hero-title {
+    margin-bottom: 48px;
   }
   /*   1158 feature   */
   .feature {
