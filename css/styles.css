@@ -534,8 +534,7 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   max-width: 288px;
 }
 
-.footer-soc-container {
-  }
+
 .footer-soc-title {
   font-size: 16px;
   font-weight: 500;
@@ -952,6 +951,28 @@ letter-spacing: 0.04em;
     width: calc((100% - 24px) / 2);
     padding: 0;
   }
+  /**********-   768 Footer ---*********/
+
+.footer-container {
+  display: flex;
+  flex-direction: row;
+ flex-wrap: wrap;
+ gap: 72px 24px;
+ padding-left: 108px;
+}
+.footer-soc-list {
+  padding-bottom: 32px;
+}
+.footer-bottom-title {
+  text-align: left;
+}
+.footer-form {
+  display: flex;
+  gap: 24px;
+}
+.footer-form-input {
+  margin-bottom: 0;
+}
 }
 /***********************************/
 /*********** Media 1158 ************/
@@ -961,7 +982,9 @@ letter-spacing: 0.04em;
     padding-left: 15px;
     padding-right: 15px;
   }
-
+.footer-soc-container {
+  display: flex;align-items: flex-start;
+  }
   /*************  1158 Header  **********/
  .header-logo {
    margin-right: 76px;
@@ -1165,10 +1188,7 @@ letter-spacing: 0.2em;
   letter-spacing: 0.02em;
   color: #ffffff;
 }
-.footer-form {
-  display: flex;
-  gap: 24px;
-}
+
 
 .footer-form-input {
   width: 264px;
