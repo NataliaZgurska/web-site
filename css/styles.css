@@ -39,10 +39,12 @@ body {
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
+
 .header-container {
   display: flex;
   align-items: center;
 }
+
 .header-navigation {
   display: flex;
   align-items: center;
@@ -63,11 +65,11 @@ body {
   color: #2e2f42;
 }
 
+/***** Studio-Portfolio-Contacts *****/
 .header-menu {
   display: none;
-  gap: 40px;
-  align-items: center;
-}
+ }
+
 .header-menu-link {
   font-family: Roboto;
   font-size: 16px;
@@ -78,6 +80,8 @@ body {
   display: block;
   padding-top: 24px;
   padding-bottom: 24px;
+
+  /******на шо? ****/
   position: relative;
 }
 .header-menu-link:focus,
@@ -100,16 +104,15 @@ body {
   left: 0;
   bottom: -1px;
   position: absolute;
-} */
+} 
 
+/******  Tel-Email   ******/
 .header-address {
-  font-style: normal;
 }
+
 .header-address-list {
   display: none;
-  gap: 40px;
-  align-items: center;
-}
+ }
 
 .header-address-link {
   display: block;
@@ -126,12 +129,14 @@ body {
 .header-address-link:hover {
   color: #404bbf;
 }
+
 .header-menu-btn {
   border: none;
   cursor: pointer;
   background-color: transparent;
   padding: 16px 0;
 }
+
 /******* HEADER MOB-MENU-MODAL *******/
 .header-modal-menu {
   position: fixed;
@@ -156,7 +161,7 @@ body {
   pointer-events: auto;
 }
 
-.header-modal-close-btn {
+.hmodal-close-btn {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -170,26 +175,27 @@ body {
   margin-bottom: 24px;
 }
 
-.header-modal-close-btn:hover,
-.header-modal-close-btn:focus {
+.hmodal-close-btn:hover,
+.hmodal-close-btn:focus {
   background-color: #404bbf;
   border: none;
 }
 
-.header-modal-close-icon {
+.hmodal-close-icon {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.header-modal-close-btn:hover .modal-close-icon,
-.header-modal-close-btn:focus .modal-close-icon {
+.hmodal-close-btn:hover .hmodal-close-icon,
+.hmodal-close-btn:focus .hmodal-close-icon {
   fill: #ffffff;
 }
+/***** Mob-modal Studio-Portfolio-Cont  ****/
 
-.header-modal-item:not(:last-child) {
+.hmodal-menu-item:not(:last-child) {
 margin-bottom: 40px;
 }
 
-.header-modal-link {
-  font-family: Roboto;
+.hmodal-menu-link {
+font-family: Roboto;
 font-size: 36px;
 font-weight: 700;
 line-height: 1.11
@@ -197,46 +203,51 @@ letter-spacing: 0.02em;
 text-transform: capitalize;
 color: #2E2F42;
 }
-.header-modal-item:first-child .header-modal-link {
+
+
+.hmodal-menu-item:first-child .hmodal-menu-link {
   color: #404bbf;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.header-modal-link:focus,
-.header-modal-link:hover {
+.hmodal-menu-link:focus,
+.hmodal-menu-link:hover {
   color: #404bbf;
 }
 
-.header-modal-address {
-    padding-bottom: 24px;
-  
+/****** Mob-modal  Tel-Email   ******/
+
+.hmodal-address-list {
+  padding-bottom: 24px;
 }
 
-.header-modal-address-link {
-  display: block;
-  font-size: 20px;
+.hmodal-address-link {
+display: block;
+font-size: 20px;
 font-style: normal;
 font-weight: 500;
 line-height: 1.2;
 letter-spacing: 0.02em;
 color: #434455;
 margin-bottom: 24px;
+transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.header-modal-address-item:first-child .header-modal-address-link {
+.hmodal-address-item:first-child  .hmodal-address-link{
   color: #404bbf;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  
-}
-.header-modal-address-link:focus,
-.header-modal-address-link:hover {
-  color: #404bbf;
 }
 
+.hmodal-address-link:hover,
+.hmodal-address-link:focus {
+ color: #404bbf;
+}
 
+/****** Mob-modal Soc  FB-Insta-Twit  ******/
 .header-soc-list {
   display: flex;
   gap: 40px;
 }
+
 .header-soc-item {
   width: 40px;
   height: 40px;
@@ -253,12 +264,13 @@ margin-bottom: 24px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.header-soc-icon {
+  fill: #f4f4fd; 
+}
+
 .header-soc-link:hover,
 .footer-soc-link:focus {
   background-color: #404BBF;
-}
-.header-soc-icon {
-  fill: #f4f4fd; 
 }
 
 
@@ -852,6 +864,17 @@ margin-bottom: 24px;
   .container {
     max-width: 768px;
   }
+ /*  768 Header   */
+.header-menu-btn {
+  display: none;
+}
+.header-menu {
+  display: flex;
+   gap: 40px;
+  align-items: center;
+}
+
+
   /*  768 Hero   */
   .hero {
     background-color: #2e2f42;
