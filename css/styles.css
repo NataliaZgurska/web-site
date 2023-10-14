@@ -1105,7 +1105,7 @@ letter-spacing: 0.2em;
 
 /********-   1158 Footer ---**************/
 
-/*
+
 .footer {
   background-color: #2e2f42;
   padding: 100px 0;
@@ -1114,34 +1114,17 @@ letter-spacing: 0.2em;
 .footer-container {
   display: flex;
   align-items: baseline;
-}
-
-.footer-logo-container {
-  margin-right: 120px;
+ /* padding-left: 156px;*/
 }
 .footer-logo {
-  color: #4d5ae5;
-  font-family: "Raleway", sans-serif;
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 1.17;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  display: inline-block;
-  margin-bottom: 16px;
-}
-.studio {
-  color: #f4f4fd;
-}
-.footer-text {
-  color: #f4f4fd;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  max-width: 264px;
+  text-align: left;
 }
 
+
 .footer-soc-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
   margin-right: 80px;
 }
 .footer-soc-title {
@@ -1150,6 +1133,7 @@ letter-spacing: 0.2em;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #ffffff;
+  text-align: left;
   margin-bottom: 16px;
 }
 .footer-soc-list {
