@@ -30,7 +30,7 @@ body {
   padding-right: 16px;
   margin-left: auto;
   margin-right: auto;
-  /* border: 2px solid red;*/
+/* border: 2px solid red;*/
 }
 
 /* ===========header=========*/
@@ -63,7 +63,6 @@ body {
   color: #2e2f42;
 }
 
-/*
 .header-menu {
   display: none;
   gap: 40px;
@@ -143,21 +142,32 @@ body {
   height: 100vh;
   background-color: #ffffff;
   padding: 24px 24px 40px 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+    visibility: hidden;
+  pointer-events: none;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
 }
 
 .header-modal-close-btn {
-  display: block;
-  margin-left: auto;
-  margin-bottom: 24px;
-  width: 24px;
-  height: 24px;
-  border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
   background-color: transparent;
   border: 1px solid #e7e9fc;
   cursor: pointer;
+  margin-left: auto;
+  margin-bottom: 24px;
 }
 
 .header-modal-close-btn:hover,
@@ -197,8 +207,7 @@ color: #2E2F42;
 }
 
 .header-modal-address {
-  padding-top: 168px;
-  padding-bottom: 24px;
+    padding-bottom: 24px;
   
 }
 
@@ -673,11 +682,7 @@ margin-bottom: 24px;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.is-open {
-  opacity: 1;
-  visibility: visible;
-  pointer-events: auto;
-}
+
 
 .modal {
   position: absolute;
@@ -748,8 +753,7 @@ margin-bottom: 24px;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-input {
-  /*display: block;*/
-  width: 100%;
+   width: 100%;
   height: 40px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
