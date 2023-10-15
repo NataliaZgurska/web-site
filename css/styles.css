@@ -81,7 +81,7 @@ body {
   padding: 16px 0;
 }
 
-/******* HEADER MOB-MENU-MODAL ****
+/******* HEADER MOB-MENU-MODAL ****/
 .header-modal-menu {
   position: fixed;
   z-index: 1;
@@ -98,7 +98,7 @@ body {
   pointer-events: none;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
-} ***/
+} 
 .is-open {
   opacity: 1;
   visibility: visible;
@@ -640,10 +640,10 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   width: 100%;
   height: 100%;
   background-color: rgba(46, 47, 66, 0.4);
- /* visibility: hidden;
+  visibility: hidden;
   pointer-events: none;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);*/
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal {
@@ -777,25 +777,31 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 .checkbox-container {
   margin-bottom: 24px;
 }
+
+
 .check-text {
-  font-size: 12px;
+    font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: #8e8f99;
-}
+  display: flex;
+  gap: 8px;
+  align-items: center;
+   }
+
 .check-text a {
   color: #4d5ae5;
   text-decoration-line: underline;
-}
+  }
 .check-text-box {
-  display: inline-flex;
+  display: flex;
   align-items: center;
   justify-content: center;
   width: 16px;
   height: 16px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 2px;
-  margin-right: 8px;
+  /*margin-right: 8px;*/
   fill: transparent;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1),
@@ -985,6 +991,12 @@ flex-direction: row;
 .footer-form {
   display: flex;
   gap: 24px;
+}
+  /**********-   768 Modal ---*********/
+.modal {
+  width: 408px;
+  min-height: 584px;
+  padding: 72px 24px 24px 24px;
 }
 
 }
