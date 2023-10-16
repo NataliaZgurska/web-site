@@ -58,7 +58,7 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
-  margin-right: 76px;
+  
 }
 .header-logo span {
   color: #2e2f42;
@@ -94,7 +94,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-    visibility: hidden;
+  visibility: hidden;
   pointer-events: none;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -159,9 +159,8 @@ color: #2E2F42;
 }
 
 /****** Mob-modal  Tel-Email   ******/
-
 .hmodal-address-list {
-  padding-bottom: 24px;
+  margin-bottom: 48px;
 }
 
 .hmodal-address-link {
@@ -172,13 +171,13 @@ font-weight: 500;
 line-height: 1.2;
 letter-spacing: 0.02em;
 color: #434455;
-margin-bottom: 24px;
 transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hmodal-address-item:first-child  .hmodal-address-link{
   color: #404bbf;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  margin-bottom: 24px;
 }
 
 .hmodal-address-link:hover,
@@ -229,9 +228,10 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  max-width: 1440px;
-  margin: 0 auto;
   text-align: center;
+  padding: 72px 0;
+  margin: 0 auto;
+  
 }
 
 @media (min-device-pixel-ratio: 2),
@@ -247,11 +247,11 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-container {
+  max-width: 320px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 72px 0;
-}
+ }
 .hero-title {
   color: #ffffff;
   font-size: 36px;
@@ -884,6 +884,8 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
         rgba(46, 47, 66, 0.7)
       ),
       url(../images/hero-bg-tablet.jpg);
+    
+    padding: 112px 0;
   }
   @media (min-resolution: 192dpi) {
     .hero {
@@ -895,8 +897,9 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
   }
   .hero-container {
-    padding: 112px 0;
+  max-width: 768px;  
   }
+
   .hero-title {
     font-size: 56px;
     line-height: 1.07;
@@ -999,7 +1002,7 @@ flex-direction: row;
 }
 
 }
-/***********************************/
+/*****************************************************/
 /*********** Media 1158 ************/
 @media screen and (min-width: 1158px) {
   .container {
@@ -1007,10 +1010,7 @@ flex-direction: row;
     padding-left: 15px;
     padding-right: 15px;
   }
-.footer-soc-container {
-  display: flex;
-  align-items: flex-start;
-  }
+
   /*************  1158 Header  **********/
  .header-logo {
    margin-right: 76px;
@@ -1041,6 +1041,7 @@ letter-spacing: 0.2em;
         rgba(46, 47, 66, 0.7)
       ),
       url(../images/hero-bg-dskt.jpg);
+       padding: 188px 0;
   }
   @media (min-resolution: 192dpi) {
     .hero {
@@ -1052,7 +1053,7 @@ letter-spacing: 0.2em;
     }
   }
   .hero-container {
-    padding: 188px 0;
+   max-width: 1440px;
   }
   .hero-title {
     margin-bottom: 48px;
@@ -1124,10 +1125,12 @@ letter-spacing: 0.2em;
 .footer-logo-container {
   margin-right: 120px;
 }
-.footer-soc-container {
-  margin-right: 80px;
-}
 
+.footer-soc-container {
+  display: flex;
+  align-items: flex-start;
+  margin-right: 80px;
+  }
 }
 
 
