@@ -247,11 +247,11 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-container {
-  max-width: 320px;
+  max-width: 352px;
   display: flex;
   flex-direction: column;
   align-items: center;
- }
+   }
 .hero-title {
   color: #ffffff;
   font-size: 36px;
@@ -288,7 +288,11 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 .feature {
   padding: 96px 0;
 }
-
+.feature-container {
+  max-width: 320px;
+  display: flex;
+  flex-direction: column;
+    }
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -305,7 +309,7 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   display: flex;
   flex-wrap: wrap;
   gap: 72px;
-}
+  }
 .feature-list-item {
   width: 100%;
 }
@@ -320,6 +324,7 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: #2e2f42;
+  text-align: center;
   margin-bottom: 8px;
 }
 .feature-text {
@@ -328,14 +333,18 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  width: 100%;
 }
 
 /*============section2-team=============*/
 .team {
   background-color: #f4f4fd;
-  padding: 96px 12px;
+  padding: 96px 0;
 }
 
+.team-container {
+  max-width: 352px;
+}
 .team-title {
   font-size: 36px;
   font-weight: 700;
@@ -360,10 +369,13 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 
-.card-team {
-  padding: 32px 16px;
+.team-img {
+  margin: 0 auto;
+  margin-bottom: 32px;
 }
-
+.card-team {
+  margin-bottom: 32px;
+}
 .team-member-name {
   font-size: 20px;
   font-weight: 500;
@@ -415,8 +427,10 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 /*==============section3-Projects===============*/
 .projects {
-  padding-top: 96px;
-  padding-bottom: 48px;
+ padding: 96px 0;
+}
+.projects-container {
+  max-width: 320px;
 }
 .projects-title {
   font-size: 36px;
@@ -446,8 +460,16 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     0px 1px 1px 0px rgba(46, 47, 66, 0.16),
     0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
+.projects-card-wrap {
+   position: relative;
+  overflow: hidden;
+  margin-bottom: 32px;
+}
+.projects-cover-text {
+  display: none;
+}
+
 .projects-title-type {
-  padding: 32px 16px;
   border: 1px solid #e7e9fc;
   border-top: none;
 }
@@ -457,7 +479,6 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
-  width: calc((100%-24px * 2) / 3);
   margin-bottom: 8px;
 }
 .projects-item-type {
@@ -465,15 +486,6 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-}
-
-.projects-card-wrap {
-  position: relative;
-  overflow: hidden;
-}
-
-.projects-cover-text {
-  display: none;
 }
 
 /*=============  FOOTER  ======*/
@@ -484,6 +496,7 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-container {
+  max-width: 352px;
  display: flex;
  flex-direction: column;
  align-items: center;
@@ -583,8 +596,7 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   padding-top: 8px;
   padding-left: 16px;
   padding-bottom: 8px;
-  margin-bottom: 16px;
-}
+ }
 
 .footer-form-input::placeholder {
   color: #ffffff;
@@ -607,6 +619,7 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   border-radius: 4px;
   border: none;
   margin: 0 auto;
+  margin-top: 16px;
 }
 
 .footer-btn-icon {
@@ -897,7 +910,7 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
   }
   .hero-container {
-  max-width: 768px;  
+  max-width: 800px;  
   }
 
   .hero-title {
@@ -908,7 +921,10 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     padding-right: 0px;
     margin-bottom: 36px;
   }
-  /******   768 feature   *****/
+  /*************   768 feature   **********/
+  .feature-container {
+  max-width: 768px;
+}
   .feature-list {
     gap: 72px 24px;
   }
@@ -916,33 +932,32 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     width: calc((100% - 24px) / 2);
     padding: 0;
   }
-  /******-768 TEAM-*******/
-  .team {
-    padding: 96px 108px;
+  .feature-subtitles {
+    text-align: left;
   }
+  /************* 768 TEAM   ***********/
+   .team-container {
+  max-width: 800px;
+}
   .team-list {
     gap: 64px 24px;
     justify-content: center;
   }
   .team-item {
-   width: calc((100% - 24px) / 2);
-    padding: 0;
-  }
-  .team-img {
-   display: block;
-   margin: 0 auto;
-  }
+   width: 264px;
+     }
+ 
   /*******-   768 Projects ---*****/
-  .projects {
-    padding-bottom: 96px;
-  }
-  .projects-list {
+   .projects-container {
+  max-width: 768px;
+}
+    .projects-list {
     gap: 72px 24px;
   }
   .projects-item {
     width: calc((100% - 24px) / 2);
-    padding: 0;
-  }
+    }
+
   .projects-cover-text {
   display: block;
   position: absolute;
@@ -963,25 +978,27 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transform: translateY(0);
 }
   /**********-   768 Footer ---*********/
-.footer {
- padding-left: 92px;
-}
 .footer-container {
+  max-width: 800px;
   display: flex;
-flex-direction: row;
+ flex-direction: row;
  flex-wrap: wrap;
  gap: 72px 24px;
+ justify-content: center;
+  align-items: baseline;
 }
 .footer-logo-container {
   align-items: start;
 }
+
 .footer-text {
-  width: 264px;
+  max-width: 264px;
 }
+
 .footer-soc-container {
  align-items: start;
- padding-bottom: 32px;
  }
+
 .footer-bottom-title {
   text-align: left;
 }
@@ -993,6 +1010,9 @@ flex-direction: row;
 .footer-form {
   display: flex;
   gap: 24px;
+}
+.footer-form-btn {
+  margin-top: 0;
 }
   /**********-   768 Modal ---*********/
 .modal {
@@ -1033,7 +1053,7 @@ letter-spacing: 0.2em;
 
 }
 
-  /*  1158 Hero   */
+  /******  1158 Hero  ********/
   .hero {
     background-color: #2e2f42;
     background-image: linear-gradient(
@@ -1053,16 +1073,19 @@ letter-spacing: 0.2em;
     }
   }
   .hero-container {
-   max-width: 1440px;
+   max-width: 1470px;
   }
   .hero-title {
     margin-bottom: 48px;
   }
-  /*   1158 feature   */
+  /********   1158 feature  ******/
   .feature {
-    padding: 120px 141px;
+    padding: 120px 0;
   }
 
+  .feature-container {
+  max-width: 1158px;
+}
   .feature-list-item {
     width: calc((100% - 24px * 3) / 4);
   }
@@ -1084,26 +1107,29 @@ letter-spacing: 0.2em;
     font-size: 20px;
     font-weight: 500;
     line-height: 1.2;
-  }
+      }
   .feature-text {
     font-weight: 400;
   }
 
-  /*- 1158 TEAM  !!!!!team-soc-link !!!!! */
+  /***********   1158 TEAM **********/
   .team {
-    padding: 120px 141px;
+    padding: 120px 0;
   }
+  .team-container {
+  max-width: 1470px;
+}
   .team-list {
     gap: 24px;
   }
-  .team-item {
-    width: calc((100% - 24px * 3) / 4);
-  }
-
-  /*-   1158 Projects ---*/
+ 
+  /********  1158 Projects **********/
   .projects {
-    padding: 120px 141px;
+    padding: 120px 0;
   }
+  .projects-container {
+  max-width: 1158px;
+}
   .projects-list {
     gap: 48px 24px;
   }
@@ -1114,14 +1140,15 @@ letter-spacing: 0.2em;
 /********-   1158 Footer ---**************/
 .footer {
  padding: 100px 0;
-   }
+  }
 
 .footer-container {
+  max-width: 1470px;
   display: flex;
   flex-wrap: nowrap;
-  align-items: baseline;
   gap: 0;
 }
+
 .footer-logo-container {
   margin-right: 120px;
 }
