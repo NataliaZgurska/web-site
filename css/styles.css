@@ -34,14 +34,15 @@ body {
 
 /* ===========header=========*/
 .header {
-  border-bottom: 1px solid #e7e9fc;
-  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+  
 }
 
 .header-container {
   display: flex;
   align-items: center;
+  border-bottom: 1px solid #e7e9fc;
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .header-navigation {
@@ -220,15 +221,16 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 /* ==========section-Hero============*/
 .hero {
+    max-width: 320px;
   background-color: #2e2f42;
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/hero-bg-mobi.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+    url(../images/people-office-mob-min.jpg);
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
   text-align: center;
    margin: 0 auto;
   padding: 72px 0;
@@ -242,7 +244,7 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/hero-bg-mobi@2x.jpg);
+      url(../images/people-office-mob@2-min.jpg);
   }
 }
 
@@ -898,12 +900,13 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   /*****************  768 Hero   *************/
   .hero {
+      max-width: 768px;
     background-color: #2e2f42;
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/hero-bg-tablet.jpg);
+      url(../images/people-office-tab-min.jpg);
     
     padding: 112px 0;
   }
@@ -914,7 +917,7 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
           rgba(46, 47, 66, 0.7),
           rgba(46, 47, 66, 0.7)
         ),
-        url(../images/hero-bg-tablet@2x.jpg);
+        url(../images/people-office-tab@2-min.jpg);
     }
   }
  
@@ -1058,12 +1061,13 @@ letter-spacing: 0.02em;
 
   /******  1158 Hero  ********/
   .hero {
+    max-width: 1158px;
     background-color: #2e2f42;
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/hero-bg-dskt.jpg);
+      url(../images/people-office-dsc.jpg);
        padding: 188px 0;
   }
   @media (min-resolution: 192dpi) {
@@ -1072,7 +1076,7 @@ letter-spacing: 0.02em;
           rgba(46, 47, 66, 0.7),
           rgba(46, 47, 66, 0.7)
         ),
-        url(../images/hero-bg-dskt@2x.jpg);
+        url(../images/people-office-dsc@2.jpg);
     }
   }
   .hero-container {
