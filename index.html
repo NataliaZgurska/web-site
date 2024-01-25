@@ -731,7 +731,7 @@
 
     <!--Modal is-open -->
     <div class="backdrop">
-      <div class="modal is-open">
+      <div class="modal">
         <button type="button" class="modal-close-btn">
           <svg class="modal-close-icon" width="8" height="8">
             <use href="./images/icons.svg#icon-close-x"></use>
@@ -744,7 +744,7 @@
             <div class="input-wrap">
               <input
                 type="text"
-                name="user-name"
+                name="name"
                 class="modal-input"
                 id="user-name"
               />
@@ -759,7 +759,7 @@
             <div class="input-wrap">
               <input
                 type="tel"
-                name="user-phone"
+                name="phone"
                 class="modal-input"
                 id="user-phone"
               />
@@ -774,7 +774,7 @@
             <div class="input-wrap">
               <input
                 type="email"
-                name="user-email"
+                name="email"
                 class="modal-input"
                 id="user-email"
               />
@@ -787,7 +787,7 @@
           <div class="modal-textarea-container">
             <label for="user-comment" class="modal-label">Comment</label>
             <textarea
-              name="user-comment"
+              name="comment"
               id="user-comment"
               class="modal-textarea"
               placeholder="Text input"
@@ -821,5 +821,7 @@
         </form>
       </div>
     </div>
+
+    <script type="module" src="/index.js"></script>
   </body>
 </html>
