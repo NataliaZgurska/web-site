@@ -2,9 +2,15 @@ const btnHero = document.querySelector('.hero-btn');
 const modal = document.querySelector('.modal');
 const btnModalClose = document.querySelector('.modal-close-btn');
 
+const mobBtn = document.querySelector('.js-header-menu-btn');
+const mobModal = document.querySelector('.js-header-modal-menu');
+const mobModalClose = document.querySelector('.js-hmodal-close-btn');
+
 
 btnHero.addEventListener('click', onBtnClick);
-btnModalClose.addEventListener('click', onBtnModalCloseClick)
+btnModalClose.addEventListener('click', onBtnModalCloseClick);
+mobBtn.addEventListener('click', onMobBtnClick);
+mobModalClose.addEventListener('click', onMobModalCloseClick);
 
 function onBtnClick(e) {
     modal.classList.add('is-open');
@@ -14,6 +20,20 @@ function onBtnModalCloseClick() {
     console.log('close modal');
     modal.classList.remove('is-open');
 }
+
+function onMobBtnClick() {
+    console.log('mobModal.classList.add is-open');
+    mobModal.classList.add('is-open');
+}
+
+function onMobModalCloseClick() {
+    mobModal.classList.remove('is-open');
+}
+
+
+
+
+
 
 //  Обробка інпутів форми 
 const storageKey = 'feedback-form-state';
